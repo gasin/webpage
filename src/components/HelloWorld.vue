@@ -5,78 +5,45 @@
     <ul>
       <li>
         <a
-          href="https://vuejs.org"
-          target="_blank"
-        >
-          Core Docs
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://forum.vuejs.org"
-          target="_blank"
-        >
-          Forum
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://chat.vuejs.org"
-          target="_blank"
-        >
-          Community Chat
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://twitter.com/vuejs"
+          href="https://twitter.com/_gacin"
           target="_blank"
         >
           Twitter
         </a>
       </li>
-      <br>
       <li>
         <a
-          href="http://vuejs-templates.github.io/webpack/"
+          href="http://gasin.hatenadiary.jp/"
           target="_blank"
         >
-          Docs for This Template
+          Blog
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://github.com/gasin"
+          target="_blank"
+        >
+          Github
         </a>
       </li>
     </ul>
-    <h2>Ecosystem</h2>
+    <h2>Organization Links</h2>
     <ul>
       <li>
         <a
-          href="http://router.vuejs.org/"
+          href="https://www.is.s.u-tokyo.ac.jp/"
           target="_blank"
         >
-          vue-router
+          IS
         </a>
       </li>
       <li>
         <a
-          href="http://vuex.vuejs.org/"
+          href="http://www.tsg.ne.jp/"
           target="_blank"
         >
-          vuex
-        </a>
-      </li>
-      <li>
-        <a
-          href="http://vue-loader.vuejs.org/"
-          target="_blank"
-        >
-          vue-loader
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://github.com/vuejs/awesome-vue"
-          target="_blank"
-        >
-          awesome-vue
+          TSG
         </a>
       </li>
     </ul>
