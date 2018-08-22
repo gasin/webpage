@@ -12,6 +12,14 @@ export default {
 </script>
 
 <style>
+
+body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background: url(./assets/background.jpg) center center / cover no-repeat fixed;
+}
+
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
