@@ -27,9 +27,10 @@ ul {
   padding: 0;
 }
 li {
-  padding: 0;
+  display: inline-block;
+  padding: 0 10px;
   font-size: 1.5vmax;
-  color: red;
+  color: #42b983;
 }
 a {
   color: #42b983;

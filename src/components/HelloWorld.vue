@@ -1,7 +1,7 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    <h2>Profile</h2>
+    <ProfileComponent />
     <h2>Hobby</h2>
     <HobbyComponent />
     <h2>Organization</h2>
@@ -13,6 +13,7 @@
 
 <script>
 
+import ProfileComponent from './Profile.vue'
 import HobbyComponent from './Hobby.vue'
 import OrganizationComponent from './Organization.vue'
 import LinkComponent from './Link.vue'
@@ -25,6 +26,7 @@ export default {
     }
   },
   components: {
+    ProfileComponent: ProfileComponent,
     HobbyComponent: HobbyComponent,
     OrganizationComponent: OrganizationComponent,
     LinkComponent: LinkComponent
@@ -39,6 +41,7 @@ h1 {
   font-weight: normal;
   color: #ffffff;
   font-size: 5vmax;
+  font-family: 'Shadows Into Light', cursive;
 
   animation-name: title-up-anime;
   animation-duration: 6s;
@@ -76,10 +79,6 @@ h2 {
   animation-iteration-count: 1;
   animation-delay: 0s;
 }
-h2:hover {
-  background-image: linear-gradient(90deg, #ffffff, #333333);
-  color: #000000;
-}
 @keyframes subtitle-up-anime {
   0% {
     margin: 100vh auto 0;
@@ -91,6 +90,10 @@ h2:hover {
   }
   100% {
   }
+}
+h2:hover {
+  background-image: linear-gradient(90deg, #ffffff, #333333);
+  color: #000000;
 }
 ul {
   padding: 0;
