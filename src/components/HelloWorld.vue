@@ -1,6 +1,7 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
+    <h2>Profile</h2>
     <h2>Hobby</h2>
     <HobbyComponent />
     <h2>Organization</h2>
@@ -34,8 +35,45 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h1, h2 {
+h1 {
+  margin: 0;
   font-weight: normal;
+  color: #ffffff;
+  font-size: 5vw;
+
+  animation-name: title-up-anime;
+  animation-duration: 6s;
+  animation-timing-function: ease;
+  animation-iteration-count: 1;
+  animation-delay: 0s;
+}
+@keyframes title-up-anime {
+  0% {
+    margin: 50vh auto 0;
+    transform: translateY(-50%);
+    font-size: 0%;
+  }
+  40% {
+    margin: 50vh auto 0;
+    transform: translateY(-50%);
+    font-size: 10vw;
+  }
+  50% {
+    margin: 50vh auto 0;
+    transform: translateY(-50%);
+    font-size: 5vw;
+  }
+  100% {
+    margin: 0;
+  }
+}
+h2 {
+  text-align: left;
+  color: #ffffff;
+}
+h2:hover {
+  background-image: linear-gradient(90deg, #ffffff, #333333);
+  color: #000000;
 }
 ul {
   padding: 0;

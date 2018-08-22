@@ -17,7 +17,7 @@ body {
   height: 100%;
   width: 100%;
   overflow: hidden;
-  background-image: linear-gradient(-90deg, #555555, #444444);
+  background-image: linear-gradient(90deg, #444444, #333333);
 }
 
 #app {
