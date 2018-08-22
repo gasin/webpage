@@ -17,7 +17,7 @@ body {
   height: 100%;
   width: 100%;
   overflow: hidden;
-  background: url(./assets/background.jpg) center center / cover no-repeat fixed;
+  background-image: linear-gradient(-90deg, #555555, #444444);
 }
 
 #app {
