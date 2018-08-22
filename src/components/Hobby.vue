@@ -28,6 +28,7 @@ ul {
 }
 li {
   padding: 0;
+  font-size: 1.5vmax;
   color: red;
 }
 a {

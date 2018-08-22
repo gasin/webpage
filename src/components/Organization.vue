@@ -37,6 +37,7 @@ ul {
 li {
   display: inline-block;
   margin: 0 10px;
+  font-size: 1.5vmax;
 }
 a {
   color: #42b983;
