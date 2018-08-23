@@ -73,17 +73,17 @@ ul {
 li {
   display: inline-block;
   margin: 0 10px;
-  background: #0099ff;
+  background: #0a446b;
 
   border-radius: 5px;
   border: solid thin black;
 }
 a {
-  padding: 5px 5px 5px 5px;
+  padding: 0px 5px;
   text-decoration: none;
   font-weight: bold;
   font-size: 1.5vmax;
-  color: black;
+  color: gray;
 
   transition: all 1s;
 }

@@ -1,6 +1,6 @@
 <template>
   <div>
-  <h2> organization </h2>
+  <h2> Organization </h2>
   <ul id='organizations'>
     <li v-for="(title,url) in links" :key=title>
       <a
@@ -70,9 +70,21 @@ ul {
 li {
   display: inline-block;
   margin: 0 10px;
-  font-size: 1.5vmax;
+  background: #793d0c;
+
+  border-radius: 5px;
+  border: solid thin black;
 }
 a {
-  color: #42b983;
+  padding: 0px 5px;
+  text-decoration: none;
+  font-size: 1.5vmax;
+  color: gray;
+
+  transition: all 1s;
+}
+a:hover {
+    opacity: 0.5;
+    font-size: 2.0vmax;
 }
 </style>

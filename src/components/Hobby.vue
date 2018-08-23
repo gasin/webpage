@@ -1,20 +1,31 @@
 <template>
   <div>
-  <h2>Hobby</h2>
-  <ul id='hobbies'>
-    <li v-for="title in titles" :key=title>
-      {{title}}
-    </li>
-  </ul>
+    <h2 @mouseenter="MouseEnter" @mouseleave="MouseLeft"> Career </h2>
+    <transition name="textfade">
+    <p v-if="alive === true">
+      元日本棋院院生。<br>
+      高校囲碁選手権個人準優勝、団体優勝など。<br>
+      JOI春合宿参加。<br>
+      Unipro Inc.での1年半のアルバイト経験。<br>
+    </p>
+    </transition>
   </div>
 </template>
 
 <script>
 
 export default {
-  data () {
+  data: function () {
     return {
-      titles: ['Programming', 'Go']
+      alive: false
+    }
+  },
+  methods: {
+    MouseEnter: function () {
+      this.alive = true
+    },
+    MouseLeft: function () {
+      this.alive = false
     }
   }
 }
@@ -23,9 +34,21 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h1 {
-  font-weight: normal;
+p {
+    position: absolute;
+    transform: translate(-50%);
+    display: inline-block;
+    font-weight: normal;
+    color: #55ffff;
+    font-size: 1.3vmax;
+    border: double medium black;
+    border-radius: 10px;
+    background-color: #333333;
+
+    padding-left: 10px;
+    text-align: left;
 }
+
 h2 {
   text-align: left;
   color: #ffffff;
@@ -56,16 +79,11 @@ h2:hover {
   color: #000000;
   padding-left: 30%;
 }
-ul {
-  padding: 0;
+
+.textfade-enter-active, .textfade-leave-active {
+  transition: opacity 1s;
 }
-li {
-  display: inline-block;
-  padding: 0 10px;
-  font-size: 1.5vmax;
-  color: #42b983;
-}
-a {
-  color: #42b983;
+.textfade-enter, .textfade-leave-to {
+  opacity: 0;
 }
 </style>
