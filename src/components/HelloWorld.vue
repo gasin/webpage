@@ -2,11 +2,8 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <ProfileComponent />
-    <h2>Hobby</h2>
     <HobbyComponent />
-    <h2>Organization</h2>
     <OrganizationComponent />
-    <h2>Link</h2>
     <LinkComponent />
   </div>
 </template>
@@ -58,7 +55,7 @@ h1 {
   40% {
     margin: 50vh auto 0;
     transform: translateY(-50%);
-    font-size: 16vmax;
+    font-size: 12vmax;
   }
   50% {
     margin: 50vh auto 0;
